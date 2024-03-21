@@ -1,5 +1,4 @@
 package com.example;
-import com.example.Animal;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -10,11 +9,11 @@ import static org.junit.Assert.assertEquals;
 
 
 @RunWith(Parameterized.class)
-public class AnimalTestParameters {
-    private String animalKind;
-    private List<String> animalFood;
+public class AnimalParametersTest {
+    private final String animalKind;
+    private final List<String> animalFood;
 
-    public AnimalTestParameters(String animalKind, List<String> animalFood) {
+    public AnimalParametersTest(String animalKind, List<String> animalFood) {
         this.animalKind = animalKind;
         this.animalFood = animalFood;
     }
